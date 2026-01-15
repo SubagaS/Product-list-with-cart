@@ -4,7 +4,7 @@ function Cart() {
   return (
     <>
       <section className={styles.cartContainer}>
-        <p>Cart area</p>
+        {/* <p>Cart area</p> */}
       </section>
     </>
   );

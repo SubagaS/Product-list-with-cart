@@ -1,0 +1,44 @@
+.cardContainer {
+  width: 20.4rem;
+  height: 19.9rem;
+  position: relative;
+}
+
+.imgFood {
+  width: 20.4rem;
+  height: 13.25rem;
+}
+
+.addToCartBtn {
+  position: absolute;
+  left: 5.2rem;
+  top: 11.8rem;
+  width: 10rem;
+  height: 2.75rem;
+  border-radius: 62rem;
+  border: 1px solid var(--rose400);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+.cartIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.txtContainer {
+  margin-top: 1rem;
+}
+
+.categoryTxt {
+  color: var(--rose500);
+}
+.nameTxt {
+  color: var(--rose900);
+}
+.priceTxt {
+  color: var(--red);
+}

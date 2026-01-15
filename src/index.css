@@ -21,10 +21,21 @@
 
 html,
 body {
-  font-family: Red-Hat-Text;
+  font-family: 'Red Hat Text';
   font-size: 16px;
+  width: 100%;
+  min-height: 100vh;
 }
 
-body{
+#root {
+  width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: var(--rose50);
 }
