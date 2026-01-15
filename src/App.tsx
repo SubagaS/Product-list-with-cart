@@ -2,9 +2,14 @@ import Menu from './Components/Menu/Menu';
 import Cart from './Components/Cart/Cart';
 import data from './data.json';
 import type { allDataType } from './Components/Menu/Menu';
-import type { FoodItem } from './Components/foodCard/FoodCard';
+import type { FoodItem } from './Components/FoodCard/FoodCard';
+import { createContext, useState } from 'react';
+
+const CountContext = createContext(Number);
 
 function App() {
+  const [count, setCount] = useState(0);
+
   let imageSize: 'mobile' | 'tablet' | 'desktop' = 'mobile';
   if (window.outerWidth <= 500) {
     imageSize = 'mobile';
@@ -19,10 +24,13 @@ function App() {
     return { ...item, image: item.image[key] };
   });
   console.log(newData);
+
   return (
     <>
-      <Menu allData={newData} />
-      <Cart />
+      <CountContext.Provider value={count}>
+        <Menu allData={newData} />
+        <Cart />
+      </CountContext.Provider>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
-import FoodCard from '../foodCard/FoodCard';
-import type { FoodItem } from '../foodCard/FoodCard';
+import FoodCard from '../FoodCard/FoodCard';
+import type { FoodItem } from '../FoodCard/FoodCard';
 
 export type allDataType = {
   allData: FoodItem[];
